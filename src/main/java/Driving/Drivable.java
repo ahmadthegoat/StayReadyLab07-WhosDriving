@@ -18,4 +18,5 @@ public interface Drivable {
      * @return Integer time in seconds
      */
     Integer transport(Double distance);
+    
 }

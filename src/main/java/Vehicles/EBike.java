@@ -4,7 +4,7 @@ import org.junit.experimental.theories.ParameterSignature;
 
 import Driving.Bike;
 
-public class MountainBike extends Bike {
+public class EBike extends Bike {
     private final Double recommendedpsi = (double) 30;
     private Double psi = recommendedpsi;
     /**
@@ -17,7 +17,7 @@ public class MountainBike extends Bike {
      */
     @Override
     public Double getTopSpeed(){
-        Double topspeed = 28.5;
+        Double topspeed = 38.5;
         Double speedlost = recommendedpsi - psi;
 
         return topspeed - speedlost;
@@ -43,10 +43,10 @@ public class MountainBike extends Bike {
         if(psi > 20 && distance >= 30 ){
             Double psideduction = distance/30;
             if(psideduction > 10){
-            psi -= 10;}
+                psi -= 10;}
             else{
                 psi -= psideduction;
-        }}
+            }}
         return time.intValue();
     }
 
